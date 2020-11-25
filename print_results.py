@@ -89,8 +89,8 @@ def print_results(results_dic, results_stats_dic, model,
         #           both the key and the value. Remember the value is accessed 
         #           by results_stats_dic[key]
         #
-        if key[0]==['p']:
-            print('{}:{}',format(key,results_stats_dic[key]))
+        if key[0]=='p':
+            print('{}:{}'.format(key,results_stats_dic[key]))
     if(print_incorrect_dogs and (results_stats_dic['n_correct_dogs']+ results_stats_dic['n_correct_notdogs']) != results_stats_dic['n_images']):
                 print("\nINCORRECT DOG/NOTDOG Dog Assigments:")
                 for key in results_dic:
